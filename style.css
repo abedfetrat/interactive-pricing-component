@@ -25,6 +25,12 @@ body {
   box-shadow: 0px 10px 25px -3px hsla(227, 35%, 25%, 0.1);
 }
 
+@media screen and (min-width: 768px) {
+  .pricing-component {
+    padding: 40px 50px;
+  }
+}
+
 .pricing-component-main {
   display: flex;
   flex-direction: column;
@@ -32,8 +38,24 @@ body {
   row-gap: 32px;
 }
 
+@media screen and (min-width: 768px) {
+  .pricing-component-main {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    row-gap: 40px;
+  }
+}
+
 .pageviews-wrap {
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .pageviews-wrap {
+    order: 1;
+    font-size: 15px;
+  }
 }
 
 .slider-wrap {
@@ -41,7 +63,14 @@ body {
   width: 100%;
 }
 
+@media screen and (min-width: 768px) {
+  .slider-wrap {
+    order: 3;
+  }
+}
+
 #slider {
+  cursor: pointer;
   position: absolute;
   top: 0;
   left: 0;
@@ -95,6 +124,12 @@ body {
   box-shadow: 0px 15px 30px 5px hsla(174, 86%, 45%, 0.3);
 }
 
+@media screen and (min-width: 768px) {
+  .price-wrap {
+    order: 2;
+  }
+}
+
 .price {
   margin-right: 10px;
   vertical-align: middle;
@@ -103,11 +138,26 @@ body {
   color: hsl(227, 35%, 25%);
 }
 
+@media screen and (min-width: 768px) {
+  .price {
+    font-size: 40px;
+  }
+}
+
 .billing-type {
   position: relative;
 }
 
+@media screen and (min-width: 768px) {
+  .billing-type {
+    order: 4;
+    margin-top: 10px;
+    margin-inline: auto;
+  }
+}
+
 #billing-switch {
+  cursor: pointer;
   position: relative;
   appearance: none;
   width: 50px;
@@ -133,7 +183,7 @@ body {
   height: 18px;
   margin: 4px;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: hsl(0, 0%, 100%);
 }
 
 #billing-switch:checked::after {
@@ -173,6 +223,16 @@ body {
   border-top: 1px solid hsl(225, 20%, 60%, 0.3);
 }
 
+@media screen and (min-width: 768px) {
+  .pricing-component-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-inline: -50px;
+    padding-inline: 50px;
+  }
+}
+
 .features {
   margin: 0;
   list-style: none;
@@ -182,6 +242,12 @@ body {
   margin-top: 8px;
   font-size: 13px;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .features li {
+    text-align: start;
+  }
 }
 
 .features li::before {
@@ -195,12 +261,19 @@ body {
 }
 
 #submit {
+  cursor: pointer;
   padding: 12px 35px;
   border: none;
   border-radius: 50px;
   background-color: hsl(227, 35%, 25%);
   color: hsl(227, 53%, 78%);
   font-weight: 800;
+}
+
+#submit:hover,
+#submit:active,
+#submit:focus {
+  color: hsl(0, 0%, 100%);
 }
 
 /* .attribution {
