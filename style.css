@@ -18,7 +18,7 @@ body {
 }
 
 .pricing-component {
-  width: min(100%, 600px);
+  width: min(100%, 560px);
   padding: 32px 16px;
   background-color: hsl(0, 0%, 100%);
   border-radius: 10px;
@@ -35,7 +35,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 32px;
+  row-gap: 40px;
 }
 
 @media screen and (min-width: 768px) {
@@ -43,7 +43,6 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    row-gap: 40px;
   }
 }
 
@@ -112,8 +111,8 @@ body {
 }
 
 #slider::-moz-range-thumb {
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
   border: none;
   border-radius: 50%;
   background-color: hsl(174, 86%, 45%);
@@ -154,6 +153,10 @@ body {
     margin-top: 10px;
     margin-inline: auto;
   }
+}
+
+.billing-switch-wrap > span {
+  font-size: 13px;
 }
 
 #billing-switch {
@@ -206,9 +209,9 @@ body {
 @media screen and (min-width: 768px) {
   .discount {
     position: absolute;
-    top: 0;
+    top: 50%;
     right: 0;
-    transform: translate(calc(100% + 5px), 0);
+    transform: translate(calc(100% + 5px), -50%);
   }
 }
 
@@ -218,7 +221,7 @@ body {
   align-items: center;
   row-gap: 32px;
   margin-inline: -16px;
-  margin-top: 32px;
+  margin-top: 40px;
   padding: 32px 32px 0px;
   border-top: 1px solid hsl(225, 20%, 60%, 0.3);
 }
@@ -227,7 +230,6 @@ body {
   .pricing-component-footer {
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 40px;
     margin-inline: -50px;
     padding-inline: 50px;
   }
