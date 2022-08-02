@@ -9,12 +9,76 @@
 body {
   display: grid;
   place-items: center;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 90px;
+  background-image: url(./images/bg-pattern.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% -300px;
   background-color: hsl(230, 100%, 99%);
   font-family: "Manrope", sans-serif;
   font-weight: 600;
   font-size: 14px;
   color: hsl(225, 20%, 60%);
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    padding-block: 100px;
+    background-position: 0% calc(50% - 320px);
+  }
+}
+
+.intro {
+  position: relative;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .intro {
+    margin-bottom: 90px;
+  }
+}
+
+.intro::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  display: block;
+  width: 146px;
+  height: 145px;
+  background-image: url(./images/pattern-circles.svg);
+  background-size: cover;
+}
+
+.intro h1 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 800;
+  color: hsl(227, 35%, 25%);
+}
+
+@media screen and (min-width: 768px) {
+  .intro h1 {
+    font-size: 24px;
+  }
+}
+
+.intro p {
+  font-size: 13px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro p {
+    font-size: 15px;
+  }
+  .intro p br {
+    display: none;
+  }
 }
 
 .pricing-component {
