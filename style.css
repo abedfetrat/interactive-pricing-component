@@ -263,6 +263,7 @@ body {
   top: -5px;
   transform: translateY(-100%);
   right: -8px;
+  display: none;
   padding: 2px 8px;
   border-radius: 50px;
   background-color: hsl(14, 92%, 95%);
