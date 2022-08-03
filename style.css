@@ -263,7 +263,6 @@ body {
   top: -5px;
   transform: translateY(-100%);
   right: -8px;
-  display: none;
   padding: 2px 8px;
   border-radius: 50px;
   background-color: hsl(14, 92%, 95%);
@@ -334,6 +333,7 @@ body {
   border-radius: 50px;
   background-color: hsl(227, 35%, 25%);
   color: hsl(227, 53%, 78%);
+  font: inherit;
   font-weight: 800;
 }
 

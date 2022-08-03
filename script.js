@@ -10,18 +10,13 @@ const discountAmount = 0.25;
 slider.addEventListener('input', updateUI);
 billingSwitch.addEventListener('input', updateUI);
 
+discountElement.textContent = `${discountAmount * 100}% discount`;
+
 updateUI();
 
 function updateUI() {
     updatePageViews();
     updatePricing();
-
-    if (billingSwitch.checked) {
-        discountElement.style.display = "block";
-        discountElement.textContent = `${discountAmount * 100}% discount`;
-    } else {
-        discountElement.style.display = "none";
-    }
 }
 
 function updatePageViews() {
